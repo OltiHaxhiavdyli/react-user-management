@@ -31,34 +31,6 @@ Demonstrates components, state, routing, forms, data fetching, and basic Redux s
 7. **Styling**
    - Styled with custom CSS for a clean layout
 
----
-
-## Project Structure
-
-my-typescript-app/
-└── src/
-├── components/
-│ ├── UserCard.tsx
-│ ├── UserTable.tsx
-│ ├── SearchBar.tsx
-│ └── UserForm.tsx
-│
-├── pages/
-│ ├── UserListPage.tsx
-│ └── UserDetailsPage.tsx
-│
-├── store/
-│ ├── index.ts
-│ └── userSlice.ts
-│
-├── types/
-│ └── user.ts
-│
-├── App.tsx
-├── index.tsx
-├── index.css
-└── react-app-env.d.ts
-
 ## Getting Started
 
 Follow these steps to run the project locally:
