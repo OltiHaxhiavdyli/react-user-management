@@ -61,8 +61,11 @@ npm -v
 Run the following commands in the project directory:
 
 npm install react react-dom
+
 npm install typescript @types/react @types/react-dom --save-dev
+
 npm install react-redux @reduxjs/toolkit
+
 npm install react-router-dom @types/react-router-dom --save-dev
 
 ### 4. Start the development server
