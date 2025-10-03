@@ -35,23 +35,36 @@ Demonstrates components, state, routing, forms, data fetching, and basic Redux s
 
 Follow these steps to run the project locally:
 
+## Getting Started
+
+Follow these steps to download and run the project on your machine.
+
+---
+
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
-cd <REPO_NAME>
+bash
+git clone https://github.com/OltiHaxhiavdyli/react-user-management.git
+cd react-user-management
 
-Download and install [Node.js](https://nodejs.org/) v18+ (includes npm).
+Download and install Node.js v18+ (includes npm) from https://nodejs.org/
 
-Verify installation:
+### 2 Install Node.js
 
-```bash
+Verify the installation:
+
 node -v
 npm -v
+
+### 3. Install dependencies
+
+Run the following commands in the project directory:
 
 npm install react react-dom
 npm install typescript @types/react @types/react-dom --save-dev
 npm install react-redux @reduxjs/toolkit
 npm install react-router-dom @types/react-router-dom --save-dev
 
-npm start"# react-user-management" 
+### 4. Start the development server
+
+npm start
