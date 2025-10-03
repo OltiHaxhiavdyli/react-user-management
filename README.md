@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# React User Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A small React TypeScript application for managing users.  
+Demonstrates components, state, routing, forms, data fetching, and basic Redux state management.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **List Users**
+   - Fetch from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
+   - Display users in a table with name, email, and company
+   - Store fetched data in Redux state
 
-### `npm start`
+2. **Search**
+   - Client-side search by name or email
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. **User Details Page**
+   - Clicking a user navigates to a details page
+   - Shows address, phone, website, and company
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. **Add a New User (Local Only)**
+   - Form with validation (name and email required)
+   - Insert the new user at the top of the list
 
-### `npm test`
+5. **Update and Delete Users**
+   - Edit user details from the details page
+   - Delete users from the list
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. **Sorting**
+   - Sort users alphabetically (A-Z / Z-A)
 
-### `npm run build`
+7. **Styling**
+   - Styled with custom CSS for a clean layout
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+my-typescript-app/
+└── src/
+├── components/
+│ ├── UserCard.tsx
+│ ├── UserTable.tsx
+│ ├── SearchBar.tsx
+│ └── UserForm.tsx
+│
+├── pages/
+│ ├── UserListPage.tsx
+│ └── UserDetailsPage.tsx
+│
+├── store/
+│ ├── index.ts
+│ └── userSlice.ts
+│
+├── types/
+│ └── user.ts
+│
+├── App.tsx
+├── index.tsx
+├── index.css
+└── react-app-env.d.ts
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Follow these steps to run the project locally:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
+cd <REPO_NAME>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Download and install [Node.js](https://nodejs.org/) v18+ (includes npm).
 
-## Learn More
+Verify installation:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+node -v
+npm -v
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install react react-dom
+npm install typescript @types/react @types/react-dom --save-dev
+npm install react-redux @reduxjs/toolkit
+npm install react-router-dom @types/react-router-dom --save-dev
+
+npm start
