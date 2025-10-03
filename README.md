@@ -29,11 +29,7 @@ Demonstrates components, state, routing, forms, data fetching, and basic Redux s
    - Sort users alphabetically (A-Z / Z-A)
 
 7. **Styling**
-   - Styled with custom CSS for a clean layout
-
-## Getting Started
-
-Follow these steps to run the project locally:
+   - Styled with Bootstrap for a clean layout
 
 ## Getting Started
 
